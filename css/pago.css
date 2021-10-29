@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 body {
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ body {
     background-color: #2a3a49;
     font-family: 'Poppins', sans-serif;
 }
-
+*/
 .card {
     width: 30em;
     height: 15em;
