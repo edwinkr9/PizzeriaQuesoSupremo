@@ -44,9 +44,9 @@
                                 Cuenta
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="pedidoscliente.html">Pedidos</a></li>
+                                <li><a class="dropdown-item" href="Mapa.html">Ubicaciones</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -182,7 +182,7 @@
                         </div>
                         <div class="row m-0">
                             <div class="col-12 mb-4 p-0">
-                                <div class="btn btn-primary">Realizar Pedido<span class="fas fa-arrow-right ps-2"></span> </div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Realizar Pedido<span class="fas fa-arrow-right ps-2"></span> </button>
                             </div>
                         </div>
 
@@ -206,6 +206,23 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Pedido Exitoso</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <label>Pago Confirmado</label>
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-secondary" aria-current="page" href="VistaCliente.html">Cerrar</a>
+          <a class="btn btn-success" aria-current="page" href="VistaCliente.html">Confirmar</a>
         </div>
       </div>
     </div>
