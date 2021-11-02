@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queso Supremo</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/Favicon.ico" />
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .height {
+    height: 100vh
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/queso_supremo_pequeño.svg" alt="" width="150" height="90">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="VistaGerenteBo.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="PedidosBo.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="SolicitudesBodega.html">Solicitudes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="RegistroBo.html">Registros</a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Cuenta
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="Index.html">Cerrar Sesión</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" id="items" aria-current="page" href="">ID: 01112021-04</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <a class="btn btn-primary my-2"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Agregar</a>
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <table class="table bg-white rounded border">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Piezas Disponibles</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Cajas de Pizza Medianas</td>
+                            <td>1500</td>
+                            <td>DISPONIBLE</td>
+                            <td>
+                                <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Latas de Champiñon</td>
+                            <td>705</td>
+                            <td>DISPONIBLE</td>
+                            <td>
+                                <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Queso Basté</td>
+                            <td>300</td>
+                            <td>DISPONIBLE</td>
+                            <td>
+                                <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>VasoPromoNWH</td>
+                            <td>580</td>
+                            <td>DISPONIBLE</td>
+                            <td>
+                                <a class="btn btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#modalmodificar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-info"  data-bs-toggle="modal" data-bs-target="#modalform"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"data-bs-toggle="modal" data-bs-target="#modalsolicitud"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+              <!-- Modal LISTA AGREGAR -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Agregar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input class="form-control form-control-sm" type="text" placeholder="Sucursal" aria-label=".form-control-sm example" >
+            <br>
+            <input class="form-control form-control-sm" type="text" placeholder="Nombre" aria-label=".form-control-sm example">
+            <input class="form-control form-control-sm" type="text" placeholder="Codigo" aria-label=".form-control-sm example" >
+            <label>Cantidad a ingresar</label>
+            <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <!-- Modal Distribución -->
+  <div class="modal fade" id="modalform" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Agregar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label>Sucursal 1: 0</label>
+            <br>
+            <label>Sucursal 2: 15</label>
+            <br>
+            <label>Sucursal 3: 0</label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <!-- Modal MODIFICAR -->
+            <div class="modal fade" id="modalmodificar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Modificar Producto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" value="Sucursal 1 ID: 01112021-04">
+                      <br>
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" value="Nombre: Vaso Promo NoWayHome">
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" value="Codigo: VasoPromoNWH">
+                      <label>Cantidad a ingresar</label>
+                      <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                          <!-- Modal SOLICITAR -->
+            <div class="modal fade" id="modalsolicitud" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Enviar Producto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label>Sucursal:</label>
+                      <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                      <br>
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" value="Nombre: Vaso Promo NoWayHome" disabled>
+                      <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example" value="Codigo: VasoPromoNWH" disabled>
+                      <label>Piezas a enviar</label>
+                      <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
