@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queso Supremo</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/Favicon.ico" />
+    <!-- bootstrap 5 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .card-1 {
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            background-color: #eee
+        }
+
+        .icons i {
+            margin-left: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/queso_supremo_pequeño.svg" alt="" width="150" height="90">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="VistaGerenteSuc.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="PedidosSuc.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="SolicitudesGSuc.html">Solicitudes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="RegistroEmpGSuc.html">Registros</a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Index.html">Cerrar Sesión</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" id="items" aria-current="page" href="">ID: 01112021-04</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <table class="table table-borderless table-responsive card-1 p-4">
+            <thead>
+                <tr class="border-bottom">
+                    <th> <span class="ml-2">Hora de Registro</span> </th>
+                    <th> <span class="ml-2">Nombre</span> </th>
+                    <th> <span class="ml-2">Área</span> </th>
+                    <th> <span class="ml-2">Dirección</span> </th>
+                    <!--<th> <span class="ml-4">Action</span> </th>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-bottom">
+                    <td>
+                        <div class="p-2"> <span class="d-block font-weight-bold">Hoy</span> <small>2:30PM</small>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-row align-items-center mb-2"> <img
+                                src="https://i.imgur.com/ZSkeqnd.jpg" width="40" class="rounded-circle">
+                            <div class="d-flex flex-column ml-2"> <span class="d-block font-weight-bold">Jennifer
+                                    john</span> <small class="text-muted">ID: 00154299-86</small> </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2"> <span class="font-weight-bold">Caja</span> </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-column"> <span>1 City point,#2A</span> <span> Brooklyn,NY</span>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="border-bottom">
+                    <td>
+                        <div class="p-2"> <span class="d-block font-weight-bold">Hoy</span> <small>3:30PM</small>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-row align-items-center mb-2"> <img
+                                src="https://i.imgur.com/C4egmYM.jpg" class="rounded-circle" width="40">
+                            <div class="d-flex flex-column ml-2"> <span class="d-block font-weight-bold">David
+                                    Smith</span> <small class="text-muted">ID: 00124578-96</small> </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2"> <span class="font-weight-bold">Cocina</span> </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-column"> <span>205 2ndst,#2A,</span> <span> Brooklyn,NY</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-bottom">
+                    <td>
+                        <div class="p-2"> <span class="d-block font-weight-bold">Hoy</span> <small>12:30PM</small>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-row align-items-center mb-2"> <img
+                                src="https://i.imgur.com/0LKZQYM.jpg" class="rounded-circle" width="40">
+                            <div class="d-flex flex-column ml-2"> <span class="d-block font-weight-bold">Emmily
+                                    johnson</span> <small class="text-muted">ID: 00124536-87</small> </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2"> <span class="font-weight-bold">Cocina</span> </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-column"> <span>199 Bowery,#7A</span> <span> Brooklyn,NY</span>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr class="border-bottom">
+                    <td>
+                        <div class="p-2"> <span class="d-block font-weight-bold">Hoy</span> <small>1:30PM</small>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-row align-items-center mb-2"> <img
+                                src="https://i.imgur.com/hczKIze.jpg" width="40" class="rounded-circle">
+                            <div class="d-flex flex-column ml-2"> <span class="d-block font-weight-bold">Nick
+                                    Jones</span> <small class="text-muted">ID: 00154721-50</small> </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="p-2"> <span class="font-weight-bold">Ventanilla</span> </div>
+                    </td>
+                    <td>
+                        <div class="p-2 d-flex flex-column"> <span>123 Clinton Ave,#2A</span> <span> Brooklyn,NY</span>
+                        </div>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
