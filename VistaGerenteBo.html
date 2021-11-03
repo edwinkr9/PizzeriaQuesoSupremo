@@ -45,7 +45,7 @@
                         <a class="nav-link" id="items" aria-current="page" href="SolicitudesBodega.html">Solicitudes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="items" aria-current="page" href="RegistroBo.html">Registros</a>
+                        <a class="nav-link" id="items" aria-current="page" href="RegistroBo.html">Gerentes</a>
                     </li>
                 </ul>
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -78,7 +78,8 @@
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Piezas Disponibles</th>
+                            <th scope="col">Piezas En Bodega</th>
+                            <th scope="col">Piezas En Sucursales</th>
                             <th scope="col">Status</th>
                             <th scope="col">Acciones</th>
                         </tr>
@@ -88,12 +89,13 @@
                             <th scope="row">1</th>
                             <td>Cajas de Pizza Medianas</td>
                             <td>1500</td>
+                            <td>180</td>
                             <td>DISPONIBLE</td>
                             <td>
                                 <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                                
                             </td>
                         </tr>
@@ -101,36 +103,39 @@
                             <th scope="row">2</th>
                             <td>Latas de Champiñon</td>
                             <td>705</td>
+                            <td>250</td>
                             <td>DISPONIBLE</td>
                             <td>
                                 <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
                             <td>Queso Basté</td>
                             <td>300</td>
+                            <td>20</td>
                             <td>DISPONIBLE</td>
                             <td>
                                 <a class="btn btn-outline-secondary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-info"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-                                <a class="btn btn-outline-dark"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
                             <td>VasoPromoNWH</td>
                             <td>580</td>
+                            <td>400</td>
                             <td>DISPONIBLE</td>
                             <td>
                                 <a class="btn btn-outline-secondary"  data-bs-toggle="modal" data-bs-target="#modalmodificar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 <a class="btn btn-outline-info"  data-bs-toggle="modal" data-bs-target="#modalform"><i class="fa fa-file-text" aria-hidden="true"></i></a>
-                                <a class="btn btn-outline-dark"data-bs-toggle="modal" data-bs-target="#modalsolicitud"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a class="btn btn-outline-dark"data-bs-toggle="modal" data-bs-target="#modalsolicitud"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
                                 
                             </td>
                         </tr>
@@ -167,7 +172,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Agregar Producto</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">Distribución de Productos</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
